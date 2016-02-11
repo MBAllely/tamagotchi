@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Tamagotchi</title>
+    </head>
+    <body>
+        <h1>
+            <li>{{ tamagotchis.getName }}</li>
+
+        </h1>
+        <img src="{{ tamagotchis.getImage }}" alt="tamagotchi" />
+
+        <hr>
+        <h3>Food Level: {{ tamagotchis.getFood }}</h3>
+
+        <br>
+        <h3>Attention Level: {{ tamagotchis.attention }}</h3>
+
+        <br>
+        <h3>Rest Level: {{ tamagotchis.rest }}</h3>
+
+        <br>
+
+        <button type="button" name="food" id="food"><a href="/my_tamagotchi_fed">Feed me!</a></button>
+        <button type="button" name="attention" id="attention">Play with me!</button>
+        <button type="button" name="rest" id="rest">Let me sleep!</button>
+        <button type="button" name="timelapse" id="timelapse">Time Lapse</button>
+    </body>
+</html>
